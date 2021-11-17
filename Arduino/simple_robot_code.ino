@@ -1,6 +1,14 @@
 /* The robot has functions to go forward, backwards, left right.
 * It has a supersonic transceiver, that transmits and receives super sonic signals.
 * It can stop before it crashes into an obstacle.
+*
+* The robot consists of
+*   - a chassis
+*   - motors
+*   - a motor controller
+*   - an arduino
+*   - a super sonic transceiver
+*   - Many wires connecting everything.
 */
 
 #include <Servo.h> // preprocessor directive. Preprocessor inserts contents of header file into program

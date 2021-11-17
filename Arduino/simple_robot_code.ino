@@ -1,3 +1,8 @@
+/* The robot has functions to go forward, backwards, left right.
+* It has a supersonic transceiver, that transmits and receives super sonic signals.
+* It can stop before it crashes into an obstacle.
+*/
+
 #include <Servo.h> // preprocessor directive. Preprocessor inserts contents of header file into program
 
 Servo my_servo; 

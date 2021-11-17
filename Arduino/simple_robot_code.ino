@@ -73,7 +73,7 @@ void setup(){
   
   robot_stop();
   delay(2000);
-  //robot_forward();
+  robot_forward();
   
  
 }
@@ -90,12 +90,9 @@ void loop(){
       // halts program while measuring pulse
   Serial.print("Pulse Microseconds: "); Serial.println( duration );
   // The closer an obstacle is to the supersonic sensor, the shorter the pulses.
-  unsigned long stop_at_this_pulse_duration = cm_distance_to_microseconds_duration( 6 );
+  unsigned long stop_at_this_distance = cm_distance_to_microseconds_duration( 6 );
   
-  if( duration <= stop_at_this_pulse_duration ){ // Once robot is very close to an obstacle, get the robot to turn, until it finds a new good direction.    
-    robot_right();       
-  }
-  else if( duration > stop_at_this_pulse_duration ){
-    robot_forward();      
+  if( duration <= stop_at_this_distance ){ // Once robot is very close to an obstacle, get the robot to turn, until it finds a new good direction.    
+    robot_stop();
   }
 }

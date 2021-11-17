@@ -8,6 +8,7 @@
 *   - a motor controller
 *   - an arduino
 *   - a super sonic transceiver
+*   - Big battery
 *   - Many wires connecting everything.
 */
 
